@@ -195,6 +195,8 @@ Validation errors use **422 Unprocessable Content**.
 
 ---
 
+
+
 ## 🧠 Key Takeaways
 
 * **Path parameters** are dynamic values in the URL.

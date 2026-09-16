@@ -122,9 +122,9 @@ def home():
 Here:
 
 ```text
-URL/path:    /
-Route name:  home
-Function:    home()
+URL/path:     /
+Route name:   home
+Function:     home()
 ```
 
 In Jinja2:
@@ -156,6 +156,61 @@ and it will generate:
 ```text
 /home
 ```
+
+#### What if `name` is not provided?
+
+If we don't explicitly provide `name`, **FastAPI uses the endpoint function's name as the route name by default.**
+
+```python
+@app.get("/")
+def home():
+    ...
+```
+
+Here:
+
+```text
+URL/path:     /
+Route name:   home
+Function:     home()
+```
+
+So this still works:
+
+```html
+{{ url_for("home") }}
+```
+
+### Multiple routes using the same function
+
+If the same function handles multiple routes:
+
+```python
+@app.get("/", name="home")
+@app.get("/posts", name="posts")
+def home():
+    ...
+```
+
+we can give each route its own name.
+
+```html
+{{ url_for("home") }}
+```
+
+→ `/`
+
+```html
+{{ url_for("posts") }}
+```
+
+→ `/posts`
+
+**Remember:**
+
+> `name` = internal route identifier
+> `path` = actual URL
+> `function name` = the default route name when `name` isn't provided.
 
 ### 8. Explicitly Naming Routes
 
