@@ -9,16 +9,13 @@ from fastapi.exception_handlers import (
 
 from contextlib import asynccontextmanager
 
-from .database import Base, engine
+from .database import engine
 from .routers import users, posts, pages
 from .templates import templates
 
 # Lifespan context manager to start and close database connection
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
-    # startup
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
     yield
     # shutdown
     await engine.dispose()
