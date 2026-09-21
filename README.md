@@ -18,14 +18,14 @@ https://youtube.com/playlist?list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&si=wUoTnaYd
 * Apply Python concepts while learning FastAPI.
 * Complete the tutorial in approximately **2 weeks**.
 
-🗓️ Learning Timeline
+## 🗓️ Learning Timeline
 
-Start Date: 14 September 2026
-Current Status: ~90% Completed
-Current Date: 21 September 2026
-Remaining: Testing & Deployment
-Target Completion: After building the AI application
-Total Content: ~14 hours
+**Start Date:** 14 September 2026  
+**Current Date:** 21 September 2026  
+**Current Status:** ~90% Completed  
+**Remaining:** Testing & Deployment  
+**Target Completion:** After building the AI application  
+**Total Content:** ~14 hours
 
 ## 🛠️ Tech Stack
 
