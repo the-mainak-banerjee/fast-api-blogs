@@ -29,10 +29,22 @@ https://youtube.com/playlist?list=PL-osiE80TeTsak-c-QsVeg0YYG_0TeyXI&si=wUoTnaYd
 
 ## 🛠️ Tech Stack
 
-* Python
-* FastAPI
-* uv
-* Uvicorn
+- Python
+- FastAPI
+- Pydantic
+- SQLAlchemy
+- SQLite
+- PostgreSQL
+- Alembic
+- uv
+- Uvicorn
+- aiosqlite
+- Psycopg
+- Jinja2
+- Pillow
+- JWT
+- pwdlib + Argon2
+- aiosmtplib
 
 ## 📖 Lessons
 
